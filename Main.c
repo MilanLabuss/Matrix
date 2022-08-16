@@ -1,7 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//function to print
+//Enter a row and column size
+//the program will then generate a matrix of random numbers of the exact size specified
+//Enter "a" to rotate the matrix by 90 degrees counter-clockwise
+//Enter "d" to rotate the matrix 90 degrees clockwise
+//Enter "w" to move the rows of the matrix up by one, regenerating the bottom row with random values
+//Enter "s" to move the rows in the matrix down by one, regenerating the top row with random values
+//Enter "x" to exit
+
 void print_matrix (int arr[10][10], int num_row, int num_col){
     for(int row=0; row<num_row; row++) {
       for(int col=0;col<num_col;col++) {
